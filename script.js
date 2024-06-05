@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var minDate= year + '-' + month + '-' + day;
 
     document.getElementById('from').setAttribute('min', minDate);
+    document.getElementById('To').setAttribute('min', minDate);
 });
 
 document.getElementById("from").addEventListener('change', function() {
@@ -42,11 +43,11 @@ function changeLanguage() {
     console.log(language);
     if (language == "en") {
         // Change text to English
-        document.getElementById("from").innerText = "From:";
-        document.getElementById("To").innerText = "To:";
+        document.getElementById("lbl_from").innerText = "From:";
+        document.getElementById("lbl_to").innerText = "To:";
     } else if (language == "de") {
         // Change text to German
-        document.getElementById("from").innerText = "Von:";
-        document.getElementById("To").innerText = "Bis:";
+        document.getElementById("lbl_from").innerText = "Von:";
+        document.getElementById("lbl_to").innerText = "Bis:";
     }
 }
