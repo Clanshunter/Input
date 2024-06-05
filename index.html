@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
 </head>
 
 <body>
     <!-- Input 1-->
     <div class="container">
         <p>Prevent select Date in Past</p>
-
-        <div>
-            <label for="from">From:</label>
-            <br>
-            <input type="date" id="from">
-        </div>
-
-        <div>
-            <label for="To">To:</label>
-            <br>
-            <input type="date" id="To">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4">
+                <label class="form-label" for="from">From:</label>
+                <input class="form-control" type="date" id="from">
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <label class="form-label" for="To">To:</label>
+                <input class="form-control" type="date" id="To">
+            </div>
         </div>
     </div>
 
@@ -44,6 +43,7 @@
 
 
     <script src="script.js"></script>
+    <script src="Bootstrap/bootstrap.js"></script>
 </body>
 
 </html>
