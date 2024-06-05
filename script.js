@@ -36,3 +36,17 @@ var maxDate=document.getElementById("To1").value;
 document.getElementById("from1").setAttribute('max',maxDate);
 }
 //#endregion
+
+function changeLanguage() {
+    var language = document.getElementById("languageSelect").value;
+    console.log(language);
+    if (language == "en") {
+        // Change text to English
+        document.getElementById("from").innerText = "From:";
+        document.getElementById("To").innerText = "To:";
+    } else if (language == "de") {
+        // Change text to German
+        document.getElementById("from").innerText = "Von:";
+        document.getElementById("To").innerText = "Bis:";
+    }
+}
